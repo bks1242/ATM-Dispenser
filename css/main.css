@@ -1,0 +1,47 @@
+.main-container {
+    border: 1px solid black;
+    background: rgb(240, 235, 235);
+}
+.header {
+    text-align: center;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.main-table {
+    background: rgb(240, 235, 235);
+}
+.column {
+    background: white;
+    width: 50%;
+}
+.column-heading {
+    text-align: center;
+}
+.form-main {
+    text-align: center;
+}
+.form-label {
+    display: block;
+
+}
+.text-box {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+}
+.money-button {
+    text-align: center;
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.main-button {
+    text-align: center;
+    margin-left: 30%;
+}
+.currency-list {
+    list-style-type: none;
+}
