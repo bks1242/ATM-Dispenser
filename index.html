@@ -1,0 +1,76 @@
+<!doctype>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+<title>ATM Dispenser</title>
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="./js/app.js"></script>
+<script src="./js/notes.js"></script>
+</head>
+<body>
+<div class="container main-container">
+  <h2 class="header">ATM DISPENSER</h2>
+  <hr>
+  <table class="table main-table">
+    <tr>
+      <td class="column">
+        <h2 class="column-heading">Welcome to ATM</h2>
+        <form class="form-group form-main" method="POST">
+          <label class="form-label">Enter the Amount</label>
+          <input type="text" placeholder="Enter the Amount" id="amount_box" class="text-box">
+        </form>
+        <div class="main-button">
+            <button class="money-button btn-primary" id="money_button" onclick="getMoney()">Get Money</button>
+        </div>    
+      </td>
+      <td class="column-two">
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                 <strong>
+                    <p>Below is the list currency notes dispensed:</p>
+                 </strong> 
+              </td>
+            </tr>
+              <tr>
+                  <td>
+                    <ul class="currency-list">
+                        <li><span id="re-1"></span>Notes of Re 1</li>
+                        <li><span id="re-5"></span>Notes of Rs 5</li>
+                        <li><span id="re-20"></span>Notes of Rs 20</li>
+                        <li><span id="re-100"></span>Notes of Rs 100</li>
+                        <li><span id="re-500"></span>Notes of Rs 500</li>
+                    </ul>
+                  </td>
+                  <td>
+                      <ul class="currency-list">
+                          <li><span id="re-2"></span>Notes of Rs 2</li>
+                          <li><span id="re-10"></span>Notes of Rs 10</li>
+                          <li><span id="re-50"></span>Notes of Rs 50</li>
+                          <li><span id="re-200"></span>Notes of Rs 200</li>
+                          <li><span id="re-2000"></span>Notes of Rs 2000</li>
+                      </ul>
+                    </td>
+                </tr>
+                <tr>
+                  <td>
+                      <span>
+                        <strong>
+                            <p>Total currency notes dispensed: <span id="total_currency"></span></p>
+                        </strong>
+                        </span>
+                  </td>
+                </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<script src="json/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
